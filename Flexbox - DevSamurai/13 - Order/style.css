@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor-body: #171717;
+    --cor-green: #449D44;
+    --cor-orange: #FB583D;
+}
+
+/* body cobre toda a viewport */
+html, body {
+    background-color: var(--cor-body);
+    height: 100vh;       /* garante 100% da altura da janela */
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    border: 3px dashed var(--cor-green);
+    width: 100%;
+}
+
+.number {
+    flex: 1 1 200px;
+    text-align: center;
+    margin: 5px;
+    background-color: var(--cor-orange);
+}
+
+/* Order */
+.order-1 { order: 0; }
+.order-2 { order: -1; }
+.order-3 { order: 2; }
+.order-4 { order: -3; }
