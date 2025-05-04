@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-body: #171717;
+    --cor-grid: #303030;
+    --cor-red: #E2084A;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor-body);
+}
+
+.container {
+    display: flex;       /* Ativa o Flexbox */
+    flex-direction: row;       /* Define a direção dos itens em linha ou coluna */
+    width: 100%;
+    background-color: var(--cor-grid);
+}
+
+.flex-item {
+    width: 50%;
+    height: 150px;
+    margin: 10px;
+    background-color: var(--cor-red);
+}
